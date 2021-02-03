@@ -8,7 +8,7 @@ Environment
 Start Server
 ------------
 - Open **start.cmd** to start the server, default listen on port **6002**
-- Message "**Server is listening on http&#58;//localhost:6001**" will prompt on server started.
+- Message "**Server is listening on http&#58;//localhost:6002**" will prompt on server started.
 
 Call Service
 ------------
