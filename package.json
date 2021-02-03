@@ -1,0 +1,21 @@
+{
+  "name": "cargosmart",
+  "version": "1.0.0",
+  "description": "Slide verification cracker for http://moc.oocl.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node ./test/crack.test.js"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "author": "Rulee Chen",
+  "license": "MIT",
+  "dependencies": {
+    "body": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "jimp": "^0.16.1",
+    "routes-router": "^4.3.1"
+  }
+}
