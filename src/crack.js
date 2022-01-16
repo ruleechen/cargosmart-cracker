@@ -19,7 +19,7 @@ const decodeBase64DataUri = (dataString) => {
   };
 };
 
-const crack = async ({ groundDataString, brickDataString, topY }) => {
+const crack = async ({ groundDataString, brickDataString }) => {
   let groundBuf;
   try {
     groundBuf = decodeBase64DataUri(groundDataString).buffer;

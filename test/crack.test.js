@@ -15,6 +15,14 @@ const materials = [
     brick: "./materials/brick2.txt",
     ground: "./materials/ground2.txt",
   },
+  {
+    brick: "./materials/brick3.txt",
+    ground: "./materials/ground3.txt",
+  },
+  {
+    brick: "./materials/brick4.txt",
+    ground: "./materials/ground4.txt",
+  },
 ];
 
 materials.forEach(({ brick, ground }) => {
@@ -31,7 +39,6 @@ materials.forEach(({ brick, ground }) => {
   crack({
     groundDataString,
     brickDataString,
-    brickTop: 31,
   }).then((left) => {
     console.log(left);
   });
