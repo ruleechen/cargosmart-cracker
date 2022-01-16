@@ -15,7 +15,7 @@ const decodeBase64DataUri = (dataString) => {
   return {
     type,
     encoding,
-    buffer: new Buffer(bufferStr, encoding),
+    buffer: Buffer.from(bufferStr, encoding),
   };
 };
 
@@ -24,14 +24,14 @@ const crack = async ({ groundDataString, brickDataString, topY }) => {
   try {
     groundBuf = decodeBase64DataUri(groundDataString).buffer;
   } catch (ex) {
-    groundBuf = new Buffer(groundDataString, "base64");
+    groundBuf = Buffer.from(groundDataString, "base64");
   }
 
   let brickBuf;
   try {
     brickBuf = decodeBase64DataUri(brickDataString).buffer;
   } catch (ex) {
-    brickBuf = new Buffer(brickDataString, "base64");
+    brickBuf = Buffer.from(brickDataString, "base64");
   }
 
   const ground = await Jimp.read(groundBuf);
