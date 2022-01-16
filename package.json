@@ -10,11 +10,18 @@
   "engines": {
     "node": ">=10.0.0"
   },
-  "author": "Rulee Chen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruleechen/CargoSmartCracker.git"
+  },
+  "author": {
+    "name": "Rulee Chen",
+    "email": "rulee@live.cn"
+  },
   "license": "MIT",
   "dependencies": {
     "body": "^5.1.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^12.0.3",
     "jimp": "^0.16.1",
     "routes-router": "^4.3.1"
   }
