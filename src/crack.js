@@ -101,7 +101,7 @@ const crack = async ({ groundDataString, brickDataString }) => {
     }
   }
 
-  // do compare
+  // do comparison
   const compares = [];
   for (let groundX = 0; groundX < groundWidth - brickWidth; groundX++) {
     const diffs = [];
