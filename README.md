@@ -3,7 +3,7 @@ A cracker local server for slide code verification of xxx.com
 
 Environment
 ------------
-- Install [Nodejs](https://nodejs.org/) >= v10.0.0
+- Install [Nodejs](https://nodejs.org/) >= v14.0.0
 
 Start Server
 ------------
@@ -26,9 +26,11 @@ Service Response
 ------------
 ```json
 {
+    "confidence": 0.8569,
     "x": 167,
     "y": 36,
 }
 ```
+- **confidence**: the confidence of matching. 1 is the 100% matched.
 - **x**: the horizontal offset value of brick in ground. -1 when test failed.
 - **y**: the vertical offset value of brick in ground. -1 when test failed.
