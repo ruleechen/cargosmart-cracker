@@ -122,11 +122,19 @@ const crack = async ({ groundDataString, brickDataString }) => {
   }
 
   // the best confidence
-  const best = compares.reduce((prev, curr) => {
-    return prev.confidence > curr.confidence ? prev : curr;
-  });
+  let best;
+  if (compares.length > 0) {
+    best = compares.reduce((prev, curr) => {
+      return prev.confidence > curr.confidence ? prev : curr;
+    });
+  }
 
   // done
+  if (!best) {
+    return {
+      confidence: 0,
+    };
+  }
   return {
     confidence: round(best.confidence, 4),
     x: best.groundX + minBrickX,
